@@ -2,6 +2,7 @@ package com.tests;
 
 import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -16,6 +17,8 @@ public class BrowserStackTestTest extends BrowserStackTestNGTest {
       test.log(LogStatus.INFO,"Browser opened");
 
       //Navigating to amazon
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+
 
         driver.get("https://www.amazon.com");
         Thread.sleep(3000);
@@ -44,6 +47,7 @@ public class BrowserStackTestTest extends BrowserStackTestNGTest {
             System.out.println(link);
             System.out.println(productlink);
         }
+        jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Test passed!\"}}");
     }
 
 
