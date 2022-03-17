@@ -1,0 +1,26 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "revathyvarma_DwJ8pQ",
+  "key": "Gr1FoxfTAE2Mj8FKJsXm",
+
+  "capabilities": {
+    "build": "browserstack-rev-parallel",
+    "name": "amazontest",
+    "browserstack.debug": true,
+    "browserstack.local": false
+  },
+
+  "environments": {
+    "env1": {
+      "browser": "chrome"
+    },
+    "env2": {
+      "os": "OS X",
+      "browser": "chrome"
+    },
+    "env3": {
+      "os": "OS X",
+      "browser": "safari"
+    }
+  }
+}
