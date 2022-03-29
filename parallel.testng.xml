@@ -17,11 +17,5 @@
         </classes>
     </test>
 
-    <test name="SingleTestEnv3">
-        <parameter name="config" value="parallel.conf.json"/>
-        <parameter name="environment" value="env3"/>
-        <classes>
-            <class name="com.tests.BrowserStackTestTest"/>
-        </classes>
-    </test>
+
 </suite>
