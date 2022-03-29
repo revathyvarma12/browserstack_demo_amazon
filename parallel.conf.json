@@ -7,7 +7,8 @@
     "build": "browserstack-rev-parallel",
     "name": "amazontest",
     "browserstack.debug": true,
-    "browserstack.local": false
+    "browserstack.local": false,
+    "browserstack.networkLogs":true
   },
 
   "environments": {
@@ -15,10 +16,6 @@
       "browser": "chrome"
     },
     "env2": {
-      "os": "OS X",
-      "browser": "chrome"
-    },
-    "env3": {
       "os": "OS X",
       "browser": "safari"
     }
